@@ -1,0 +1,39 @@
+{
+    "video": {
+        "input_path": "first-homework/first-homework.mp4",
+        "output_path": "first-homework/wanghuarui/video/first-homework-annotated.mp4"
+    },
+    "hsv": {
+        "lower_green": [62, 116, 69],
+        "upper_green": [88, 255, 208]
+    },
+    "morphology": {
+        "kernel_size": 5,
+        "open_iterations": 1,
+        "close_iterations": 2
+    },
+    "filter": {
+        "min_area": 8000,
+        "max_area": 25000,
+        "min_circularity": 0.6,
+        "min_aspect_ratio": 0.6,
+        "edge_relax_factor": 0.5,
+        "min_radius": 50,
+        "max_radius": 100
+    },
+    "tracking": {
+        "max_distance": 200,
+        "max_radius_diff": 40,
+        "max_lost_frames": 10
+    },
+    "visualization": {
+        "circle_color": [0, 255, 0],
+        "arrow_color": [0, 0, 255],
+        "trail_color": [255, 105, 180],
+        "trail_length": 20,
+        "arrow_scale": 3.0
+    },
+    "csv_output": {
+        "path": "first-homework/wanghuarui/data/tracking_data.csv"
+    }
+}
